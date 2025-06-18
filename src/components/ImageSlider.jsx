@@ -3,52 +3,52 @@ import './ImageSlider.css';
 
 const destinations = [
   {
-    image: '/src/assets/img1.jpg',
+    image: '/image/img1.jpg',
     title: 'Paris',
     description: 'The City of Light, rich in art and history.'
   },
   {
-    image: '/src/assets/img2.jpg',
+    image: '/image/img2.jpg',
     title: 'Paris',
     description: 'A futuristic city blending tradition and innovation.'
   },
   {
-    image: '/src/assets/img3.avif',
+    image: '/image/img3.avif',
     title: 'New York',
     description: 'The city that never sleeps, full of energy.'
   },
   {
-    image: '/src/assets/img4.avif',
+    image: '/image/img4.avif',
     title: 'Rome',
     description: 'Ancient ruins and timeless culture.'
   },
   {
-    image: '/src/assets/img5.avif',
+    image: '/image/img5.avif',
     title: 'Bali',
     description: 'Island paradise with serene beaches.'
   },
   {
-    image: '/src/assets/img6.avif',
+    image: '/image/img6.avif',
     title: 'Egypt',
     description: 'Famous for the Opera House and beautiful harbor.'
   },
   {
-    image: '/src/assets/img7.avif',
+    image: '/image/img7.avif',
     title: 'India',
     description: 'Where East meets West in stunning fashion.'
   },
   {
-    image: '/src/assets/img8.avif',
+    image: '/image/img8.avif',
     title: 'Amsterdam',
     description: 'Canals, bikes, and rich history.'
   },
   {
-    image: '/src/assets/img9.avif',
+    image: '/image/img9.avif',
     title: 'France',
     description: 'Luxury, skyscrapers, and desert adventures.'
   },
   {
-    image: '/src/assets/img10.avif',
+    image: '/image/img10.avif',
     title: 'Cape Town',
     description: 'Breathtaking landscapes and coastal beauty.'
   }

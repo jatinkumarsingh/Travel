@@ -19,7 +19,7 @@ function App() {
       <div className="content-overlay">
         <header className="header">
           <div className="logo">
-            <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener noreferrer">
+            <a target="_blank" rel="noopener noreferrer">
               <img
                 src="https://static.tacdn.com/img2/brand_refresh/special/pride_month_Tripadvisor_lockup_horizontal_secondary.svg"
                 alt="TripAdvisor Logo"
