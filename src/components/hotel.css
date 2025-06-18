@@ -1,0 +1,140 @@
+.hotel-section {
+  background-image: url('../assets/get.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  border-radius: 24px;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.hotel-header h2 {
+  font-size: 36px;
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+}
+
+.hotel-header p {
+  color: #ddd;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hotel-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  overflow: hidden;
+  width: 260px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hotel-card:hover {
+  transform: scale(1.03);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hotel-info {
+  padding: 15px;
+}
+
+.city {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.name {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.rating {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.badge {
+  background: #34d399;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 6px;
+}
+
+.price {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.price del {
+  color: #aaa;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.total {
+  font-size: 13px;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.offer {
+  background: #22c55e;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.member-offer span {
+  background: #facc15;
+  color: #222;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.member-offer a {
+  font-size: 12px;
+  color: white;
+  text-decoration: underline;
+}
+
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hotel-section {
+    padding: 30px 15px;
+  }
+
+  .hotel-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .hotel-header h2 {
+    font-size: 28px;
+  }
+}

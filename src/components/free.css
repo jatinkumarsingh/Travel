@@ -1,0 +1,83 @@
+.visa-section {
+  background: #fef5eb;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.visa-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.visa-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 20px;
+}
+
+/* === Common Card Styles === */
+.card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  padding: 16px;
+  width: 100%;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-content p {
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+/* === Layout Grid Positions === */
+.mauritius {
+  grid-column: span 2;
+  grid-row: 1 / 2;
+}
+
+.thailand {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+}
+
+.maldives {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
+.malaysia {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.srilanka {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.seychelles {
+  grid-column: 4 / 5;
+  grid-row: 2 / 4;
+}
