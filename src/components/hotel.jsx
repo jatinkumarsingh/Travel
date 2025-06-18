@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hotel.css";
+import "./hotel.css";
 
 import ibis from "../assets/mumbai.jpg";
 import pullman from "../assets/delhi.jpg";
