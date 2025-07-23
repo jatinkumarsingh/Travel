@@ -3,58 +3,53 @@ import './ImageSlider.css';
 
 const destinations = [
   {
-    image: '/image/img1.jpg',
-    title: 'Paris',
-    description: 'The City of Light, rich in art and history.'
-  },
-  {
     image: '/image/img2.jpg',
     title: 'Paris',
-    description: 'A futuristic city blending tradition and innovation.'
+    description: 'The city of love and lights, famous for the Eiffel Tower, art, and timeless elegance.'
   },
   {
     image: '/image/img3.avif',
     title: 'New York',
-    description: 'The city that never sleeps, full of energy.'
+    description: 'The city that never sleeps, bursting with energy, skyscrapers, and endless possibilities.'
   },
   {
     image: '/image/img4.avif',
     title: 'Rome',
-    description: 'Ancient ruins and timeless culture.'
+    description: 'The Eternal City, where ancient ruins meet vibrant Italian culture and cuisine.'
   },
   {
     image: '/image/img5.avif',
     title: 'Bali',
-    description: 'Island paradise with serene beaches.'
+    description: ' A tropical paradise with lush jungles, stunning beaches, and a rich spiritual vibe.'
   },
   {
     image: '/image/img6.avif',
     title: 'Egypt',
-    description: 'Famous for the Opera House and beautiful harbor.'
+    description: 'Land of the pharaohs, home to the majestic pyramids and timeless Nile River.'
   },
   {
     image: '/image/img7.avif',
     title: 'India',
-    description: 'Where East meets West in stunning fashion.'
+    description: 'A vibrant tapestry of colors, spices, and ancient traditions blending with modern life.'
   },
   {
     image: '/image/img8.avif',
     title: 'Amsterdam',
-    description: 'Canals, bikes, and rich history.'
+    description: 'A charming city of canals, bikes, and vibrant culture in the heart of the Netherlands.'
   },
   {
     image: '/image/img9.avif',
     title: 'France',
-    description: 'Luxury, skyscrapers, and desert adventures.'
+    description: 'A country of romance, world-class wine, and iconic landmarks like the Eiffel Tower.'
   },
   {
     image: '/image/img10.avif',
     title: 'Cape Town',
-    description: 'Breathtaking landscapes and coastal beauty.'
+    description: ' A breathtaking city where mountains meet the sea, rich in culture and adventure.'
   }
 ];
 
-const extendedDestinations = [...destinations, ...destinations]; // For infinite loop
+const extendedDestinations = [...destinations, ...destinations]; 
 
 function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);

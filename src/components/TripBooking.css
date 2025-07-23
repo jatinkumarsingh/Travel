@@ -1,0 +1,513 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.booking-container {
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+/* Form Box */
+.form-box {
+  padding: 24px;
+  background: white;
+}
+
+/* Trip Types */
+.trip-types {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 16px;
+}
+
+.trip-type {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.trip-type input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #2563eb;
+}
+
+.book-international {
+  margin-left: auto;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Search Fields */
+.search-fields {
+  margin-bottom: 24px;
+}
+
+.field-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.from-field,
+.to-field {
+  flex: 1;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.swap-button {
+  background: #2563eb;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.swap-button:hover {
+  background: #1d4ed8;
+  transform: rotate(180deg);
+}
+
+.date-traveler-group {
+  display: flex;
+  gap: 16px;
+}
+
+.date-field,
+.traveler-field {
+  flex: 1;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.date-input .day-name {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.date-placeholder {
+  color: #2563eb;
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+/* Additional Options */
+.additional-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.zero-cancellation {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.zero-cancellation input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #2563eb;
+}
+
+.zero-cancellation span:nth-child(2) {
+  font-weight: 500;
+  color: #1a202c;
+  margin-right: 8px;
+}
+
+.refund-text {
+  font-size: 12px;
+  color: #6b7280;
+  margin-right: 8px;
+}
+
+.view-details {
+  font-size: 12px;
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.flight-tracker {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #1a202c;
+  position: relative;
+}
+
+.new-badge-small {
+  background: #e53e3e;
+  color: white;
+  font-size: 8px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* Search Button */
+.search-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.search-btn:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+/* Input field styles for From/To locations */
+.city-name-input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a202c;
+  background: transparent;
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 0;
+}
+
+.city-name-input::placeholder {
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.airport-code-input {
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #6b7280;
+  background: transparent;
+  width: 100%;
+  padding: 0;
+}
+
+.airport-code-input::placeholder {
+  color: #9ca3af;
+}
+
+/* Date picker styling */
+.date-picker {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a202c;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+.date-picker.return-date::placeholder {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* Traveler input styling */
+.traveler-count-input {
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a202c;
+  background: transparent;
+  width: 40px;
+  margin-right: 8px;
+}
+
+.traveler-label {
+  font-size: 14px;
+  color: #1a202c;
+  margin-right: 8px;
+}
+
+.class-select {
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #6b7280;
+  background: transparent;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+/* Focus states for better UX */
+.city-name-input:focus,
+.airport-code-input:focus {
+  color: #2563eb;
+}
+
+.from-field:focus-within,
+.to-field:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.date-field:focus-within,
+.traveler-field:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-container {
+    margin: 16px;
+    max-width: none;
+  }
+  
+  .field-group {
+    flex-direction: column;
+  }
+  
+  .date-traveler-group {
+    flex-direction: column;
+  }
+  
+  .additional-options {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+/* Beautiful Heading Section */
+.heading-section {
+  text-align: center;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid linear-gradient(135deg, #3b82f6, #8b5cf6);
+  position: relative;
+}
+
+.heading-section::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-radius: 1px;
+}
+
+.main-heading {
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 12px 0;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.heading-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+/* Responsive heading styles */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
+  
+  .heading-subtitle {
+    font-size: 14px;
+  }
+  
+  .heading-section {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 28px;
+  }
+  
+  .heading-subtitle {
+    font-size: 13px;
+  }
+}
+/* Suggestions Dropdown Styles */
+.location-input {
+  position: relative;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-height: 280px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: 4px;
+}
+
+.suggestion-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f5f9;
+  transition: all 0.2s ease;
+}
+
+.suggestion-item:hover {
+  background: rgba(37, 99, 235, 0.05);
+  border-left: 3px solid #2563eb;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-city {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 2px;
+}
+
+.suggestion-code {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 2px;
+}
+
+.suggestion-country {
+  font-size: 11px;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* Ensure proper positioning */
+.from-field,
+.to-field {
+  position: relative;
+  z-index: 1;
+}
+
+.from-field .suggestions-dropdown,
+.to-field .suggestions-dropdown {
+  z-index: 1000;
+}
+
+/* Scrollbar styling for suggestions */
+.suggestions-dropdown::-webkit-scrollbar {
+  width: 4px;
+}
+
+.suggestions-dropdown::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 2px;
+}
+
+.suggestions-dropdown::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 2px;
+}
+
+.suggestions-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Mobile responsive suggestions */
+@media (max-width: 768px) {
+  .suggestions-dropdown {
+    max-height: 200px;
+    font-size: 14px;
+  }
+  
+  .suggestion-item {
+    padding: 10px 12px;
+  }
+  
+  .suggestion-city {
+    font-size: 14px;
+  }
+  
+  .suggestion-code {
+    font-size: 11px;
+  }
+  
+  .suggestion-country {
+    font-size: 10px;
+  }
+}
+

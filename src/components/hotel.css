@@ -122,8 +122,6 @@
   color: white;
   text-decoration: underline;
 }
-
-/* ✅ Mobile Responsiveness */
 @media (max-width: 768px) {
   .hotel-section {
     padding: 30px 15px;

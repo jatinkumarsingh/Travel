@@ -1,0 +1,46 @@
+// src/data/destinations.js
+const destinations = [
+  { name: 'France', type: 'Country', region: 'Europe', flag: '🇫🇷', description: 'Art, cuisine, and romance' },
+  { name: 'Italy', type: 'Country', region: 'Europe', flag: '🇮🇹', description: 'History, art, and amazing food' },
+  { name: 'Spain', type: 'Country', region: 'Europe', flag: '🇪🇸', description: 'Culture, beaches, and architecture' },
+  { name: 'Japan', type: 'Country', region: 'Asia', flag: '🇯🇵', description: 'Tradition meets modernity' },
+  { name: 'United States', type: 'Country', region: 'North America', flag: '🇺🇸', description: 'Diverse landscapes and culture' },
+  { name: 'United Kingdom', type: 'Country', region: 'Europe', flag: '🇬🇧', description: 'History, culture, and countryside' },
+  { name: 'Germany', type: 'Country', region: 'Europe', flag: '🇩🇪', description: 'Castles, culture, and cuisine' },
+  { name: 'Australia', type: 'Country', region: 'Oceania', flag: '🇦🇺', description: 'Wildlife and stunning beaches' },
+  { name: 'India', type: 'Country', region: 'Asia', flag: '🇮🇳', description: 'Rich heritage and diversity' },
+  { name: 'Thailand', type: 'Country', region: 'Asia', flag: '🇹🇭', description: 'Temples, beaches, and cuisine' },
+
+  { name: 'Paris', type: 'City', region: 'Europe', flag: '🇫🇷', description: 'City of Light and Love' },
+  { name: 'London', type: 'City', region: 'Europe', flag: '🇬🇧', description: 'Historic capital with royal charm' },
+  { name: 'New York', type: 'City', region: 'North America', flag: '🇺🇸', description: 'The city that never sleeps' },
+  { name: 'Tokyo', type: 'City', region: 'Asia', flag: '🇯🇵', description: 'Modern metropolis with tradition' },
+  { name: 'Dubai', type: 'City', region: 'Middle East', flag: '🇦🇪', description: 'Luxury and futuristic skyline' },
+  { name: 'Singapore', type: 'City', region: 'Asia', flag: '🇸🇬', description: 'Garden city of the future' },
+  { name: 'Barcelona', type: 'City', region: 'Europe', flag: '🇪🇸', description: 'Art, architecture, and beaches' },
+  { name: 'Rome', type: 'City', region: 'Europe', flag: '🇮🇹', description: 'Eternal city of history' },
+  { name: 'Amsterdam', type: 'City', region: 'Europe', flag: '🇳🇱', description: 'Canals, culture, and nightlife' },
+  { name: 'Istanbul', type: 'City', region: 'Europe/Asia', flag: '🇹🇷', description: 'Where East meets West' },
+
+  { name: 'Mumbai', type: 'City', region: 'Asia', flag: '🇮🇳', description: 'Bollywood and business capital' },
+  { name: 'Delhi', type: 'City', region: 'Asia', flag: '🇮🇳', description: 'India\'s historic capital' },
+  { name: 'Bengaluru', type: 'City', region: 'Asia', flag: '🇮🇳', description: 'Silicon Valley of India' },
+  { name: 'Chennai', type: 'City', region: 'Asia', flag: '🇮🇳', description: 'Gateway to South India' },
+  { name: 'Kolkata', type: 'City', region: 'Asia', flag: '🇮🇳', description: 'City of Joy and culture' },
+  { name: 'Hyderabad', type: 'City', region: 'Asia', flag: '🇮🇳', description: 'City of Nizams' },
+  { name: 'Pune', type: 'City', region: 'Asia', flag: '🇮🇳', description: 'Oxford of the East' },
+  { name: 'Jaipur', type: 'City', region: 'Asia', flag: '🇮🇳', description: 'The Pink City' },
+  { name: 'Goa', type: 'City', region: 'Asia', flag: '🇮🇳', description: 'Beaches and nightlife' },
+  { name: 'Kerala', type: 'State', region: 'Asia', flag: '🇮🇳', description: 'God\'s Own Country' },
+
+  { name: 'Sydney', type: 'City', region: 'Oceania', flag: '🇦🇺', description: 'Harbor city with iconic opera house' },
+  { name: 'Vancouver', type: 'City', region: 'North America', flag: '🇨🇦', description: 'Mountains meet ocean' },
+  { name: 'Bangkok', type: 'City', region: 'Asia', flag: '🇹🇭', description: 'Street food and temples' },
+  { name: 'Hong Kong', type: 'City', region: 'Asia', flag: '🇭🇰', description: 'Skyscrapers and dim sum' },
+  { name: 'Berlin', type: 'City', region: 'Europe', flag: '🇩🇪', description: 'History and modern culture' },
+  { name: 'Vienna', type: 'City', region: 'Europe', flag: '🇦🇹', description: 'Imperial elegance and music' },
+  { name: 'Prague', type: 'City', region: 'Europe', flag: '🇨🇿', description: 'Fairy-tale architecture' },
+  { name: 'Lisbon', type: 'City', region: 'Europe', flag: '🇵🇹', description: 'Hills, trams, and fado music' },
+];
+
+export default destinations;

@@ -54,7 +54,6 @@ const hotels = [
     img: oterra,
   },
 ];
-
 export default function Hotel() {
   return (
     <section
