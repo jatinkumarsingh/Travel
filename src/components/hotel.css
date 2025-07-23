@@ -136,3 +136,35 @@
     font-size: 28px;
   }
 }
+
+@media (max-width: 600px) {
+  .hotel-section {
+    padding: 10px 2vw;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  .hotel-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hotel-card {
+    max-width: 100vw;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .hotel-header h2 {
+    font-size: 18px;
+  }
+  .hotel-info {
+    padding: 8px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 12px;
+  }
+  .total {
+    font-size: 10px;
+  }
+}
